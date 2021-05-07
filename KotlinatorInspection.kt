@@ -1,5 +1,3 @@
-// (c) Facebook, Inc. and its affiliates. Confidential and proprietary.
-
 package com.facebook.tools.intellij.kotlinator
 
 import com.google.common.collect.Lists
