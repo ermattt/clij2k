@@ -1,0 +1,6 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="kotlinator.default" />
+    <inspection_tool class="KotlinatorInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  </profile>
+</component>

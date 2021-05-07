@@ -1,0 +1,31 @@
+<idea-plugin>
+  <id>com.facebook.intellij.kotlinator</id>
+  <name>Kotlinator</name>
+  <version>1.0</version>
+
+  <description><![CDATA[
+  Provides a way to run Android Studio's kotlin conversion (nj2k) from the command line via an inspection
+    ]]></description>
+  <vendor email="ermatt@fb.com"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="190.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.java</depends>
+  <depends optional="false" config-file="KotlinPlugin.xml">org.jetbrains.kotlin</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <localInspection language="JAVA"
+                     displayName="Kotlinator"
+                     groupName="Java"
+                     hasStaticDescription="true"
+                     level="TYPO"
+                     implementationClass="com.facebook.tools.intellij.kotlinator.KotlinatorInspection"
+                     enabledByDefault="false"/>
+  </extensions>
+
+</idea-plugin>
